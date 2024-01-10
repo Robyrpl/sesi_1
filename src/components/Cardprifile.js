@@ -1,12 +1,12 @@
-import acsent from "../assets/logo.png";
+import acsent from "../assets/gambar.png";
 import "../css/style.css";
-
+import gambar from "../assets/gambar.png";
 const Cardprofile = () => {
   return (
     // 1. Inline Css
     <div
       style={{
-        backgroundColor: "#00B6DF",
+        backgroundColor: "#04608f",
         width: "100vw",
         height: "100vh",
         backgroundImage: "url(" + { acsent } + ")",
@@ -15,16 +15,16 @@ const Cardprofile = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        textAlign: "200px",
       }}
     >
       {/* 2. Css File */}
-
-      <div className="card" align="center">
-        <img />
-        <div>
-          <h1>siswa SMKN 6 JEMBER</h1>
+      <div className="card">
+        <img src={gambar} width="100px" />
+        <div align="center">
+          <h1>BIODATA</h1>
         </div>
-        <div>
+        <div align="center">
           <h2>Hafis Roby</h2>
         </div>
         <div>
@@ -33,7 +33,8 @@ const Cardprofile = () => {
         <div>Alamat : Pondok Joyo</div>
         <div>Kec. : Semboro</div>
         <div>Kab. : Jember</div>
-        <button>Contact</button>
+        <div>Hobi : mancing</div>
+        <div>No_Hp :0857331779552</div>
       </div>
     </div>
   );
